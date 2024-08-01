@@ -500,8 +500,11 @@
         <footer class="text-muted pb-3 pt-4 bg-dark d-print-none"> 
             <div class="container"> 
                 <p class="float-right"> <a href="#" class="text-light small">Back to top</a> </p> 
-                <p class="text-white small">Thank you for visiting my site!</p> 
-                <p class="text-white small">&copy; 2024 Matt Smith Burlage</p> 
+                <p class="text-white small">Thank you for visiting my site!</p>
+                <p class="text-white small">&copy; <span id="year"></span> Matt Smith Burlage</p>
+                <script>
+                    document.getElementById("year").textContent = new Date().getFullYear();
+                </script>
             </div>             
         </footer>         
         <!-- Bootstrap core JavaScript
@@ -519,6 +522,6 @@
         <!--    document.addEventListener('DOMContentLoaded', () => {-->         
         <!--        toggleResume()-->         
         <!--    })-->         
-        <!--</script>-->         
+        <!--</script>-->
     </body>     
 </html>
